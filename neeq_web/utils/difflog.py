@@ -12,9 +12,12 @@ old_info: json dict contains old data
 """
 import datetime
 import json
+import os
 
 
 diffRootPath = "./log/difflog/"
+if not os.path.exists(diffRootPath):
+    os.makedirs(diffRootPath)
 
 class DiffLog():
     """
